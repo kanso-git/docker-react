@@ -1,0 +1,6 @@
+FROM node:alpine
+RUN mkdir -p /opt/app
+WORKDIR /opt/app
+ADD package.json /opt/app
+RUN yarn install
+COPY . .

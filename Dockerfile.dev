@@ -4,3 +4,4 @@ WORKDIR /opt/app
 ADD package.json /opt/app
 RUN yarn install
 COPY . .
+CMD ["yarn","start"]
